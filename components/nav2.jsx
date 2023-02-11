@@ -1,7 +1,6 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 export default function Nav() {
 
@@ -14,7 +13,7 @@ export default function Nav() {
       <div className="flex items-center w-full md:w-auto">
         <Link href="/">
           <a className="flex items-center" id={router.pathname == "/" ? "activeLink" : ""}>
-            <img src=" " className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+            <Image src=" " className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Sohag Technology</span>
           </a>
         </Link>
