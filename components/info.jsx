@@ -35,7 +35,7 @@ export default function Info() {
           <div className="container">
             <div className="relative flex flex-col min-w-0 break-words w-full">
               <div className="flex-auto p-5 lg:p-10">
-                <Image src="https://user-images.githubusercontent.com/54521023/152731049-cc744a56-1d6f-4945-9566-0fa3b7ad1d24.png" alt="contact image" />
+                <Image src="/public/image/contact.png" width="16" height="16" alt="contact image" />
               </div>
             </div>
           </div>
