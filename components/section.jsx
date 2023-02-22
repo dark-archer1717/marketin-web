@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 
-
 export default function section() {
   return (
     <div>
@@ -12,11 +11,11 @@ export default function section() {
               <div className="-mx-3 flex items-center sm:-mx-4">
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
-                    <Image
+                    {/* <Image
                       src="../public/image/about.jpg"
                       alt="blank.jpg"
                       className="w-full rounded-2xl"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
