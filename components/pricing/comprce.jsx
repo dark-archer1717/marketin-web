@@ -4,13 +4,15 @@ const tiers = [
   {
     name: 'Basic',
     href: '/contact',
-    priceMonthly: ' 500',
+    packageSize: 10,
+    priceMonthly: ' 600',
     description: 'Choose a package and start your internet journey',
     includedFeatures: ['Unlimited BDIX Bandwidth', '4K Youtube and Facebook Stream.', '24/7 Phone and Online Support.'],
   },
   {
     name: 'Balanced',
     href: '/contact',
+    packageSize: 15,
     priceMonthly: 800,
     description: 'Choose a package and start your internet journey',
     includedFeatures: [
@@ -23,6 +25,7 @@ const tiers = [
   {
     name: 'Gamer',
     href: '/contact',
+    packageSize: 20,
     priceMonthly: 1000,
     description: 'Choose a package and start your internet journey',
     includedFeatures: [
@@ -35,6 +38,7 @@ const tiers = [
   {
     name: 'Heavy User',
     href: '/contact',
+    packageSize: 25,
     priceMonthly: 1200,
     description: 'Choose a package and start your internet journey',
     includedFeatures: [
@@ -45,8 +49,9 @@ const tiers = [
     ],
   },
   {
-    name: 'Heavy User',
+    name: 'Extra Heavy User',
     href: '/contact',
+    packageSize: 30,
     priceMonthly: 1500,
     description: 'Choose a package and start your internet journey',
     includedFeatures: [
@@ -57,8 +62,9 @@ const tiers = [
     ],
   },
   {
-    name: 'Heavy User',
+    name: 'Ultimate User',
     href: '/contact',
+    packageSize: 40,
     priceMonthly: 1800,
     description: 'Choose a package and start your internet journey',
     includedFeatures: [
@@ -118,7 +124,7 @@ export default function Comprice() {
               <div key={tier.name} className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
                 <div className="p-6" >
                   <p className='mt-8'>
-                    40 Mbps </p>
+                    {tier.packageSize} Mbps </p>
                   <h2 className="text-lg leading-6 font-medium text-gray-900">{tier.name}</h2>
                   <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
                   <p className="mt-8">
