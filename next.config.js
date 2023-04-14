@@ -2,7 +2,14 @@ module.exports = {
   reactStrictMode: true,
   esModule: false,
   images: {
-    domains: ['assets.sohagnetbd.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'example.com',
+        port: '',
+        pathname: '/account123/**',
+      },
+    ],
   },
 }
 

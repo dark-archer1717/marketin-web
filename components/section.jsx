@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import About from '../public/image/about.jpg'
 
 export default function section() {
   return (
@@ -11,11 +12,15 @@ export default function section() {
               <div className="-mx-3 flex items-center sm:-mx-4">
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
-                    {/* <Image
-                      src="../public/image/about.jpg"
-                      alt="blank.jpg"
-                      className="w-full rounded-2xl"
-                    /> */}
+                    {
+                      <Image
+                        src={About}
+                        width={800}
+                        height={500}
+                        alt="blank.jpg"
+                        className="w-full rounded-2xl "
+                      />
+                    }
                   </div>
                 </div>
               </div>

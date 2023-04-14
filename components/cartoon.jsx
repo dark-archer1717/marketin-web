@@ -10,7 +10,15 @@ export default function Cartoon() {
           <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Lets talk!</h2>
           <div className="dark:text-gray-400">Vivamus in nisl metus? Phasellus.</div>
         </div>
-        <Image src="assets/svg/doodle.svg" width={100} height={100} layout="responsive" alt="image" className="p-6 h-52 md:h-64" />
+        <div
+          style={{ width: '100%', height: '100%', position: 'relative' }}>
+          <Image
+            src="/assets/svg/doodle.svg"
+            layout="fill" alt="image"
+            objectFit='contain'
+            className="p-6 h-52 md:h-64"
+          />
+        </div>
       </div>
 
       <form noValidate="" className="space-y-6 ng-untouched ng-pristine ng-valid">
