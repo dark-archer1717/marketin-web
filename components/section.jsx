@@ -15,8 +15,9 @@ export default function section() {
                     {
                       <Image
                         src={About}
-                        width={800}
+                        width={700}
                         height={500}
+                        fill="100%"
                         alt="blank.jpg"
                         className="w-full rounded-2xl "
                       />
