@@ -11,17 +11,17 @@ const features = [
   {
     name: 'Home Broadband Internet'
     ,
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'Sohag Technology is providing one of the fastest broadband internet and network solutions throughout Dhaka, reliable for both gamers and regular users',
     icon: HomeIcon,
   },
   {
     name: 'Accessible Technical Support',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'We are offering swift and knowledgeable assistance for all your connectivity needs. Experience seamless browsing with our dedicated 24/7 support team."',
     icon: LockClosedIcon,
   },
   {
     name: 'Dedicated Server Hosting',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'Get a dedicated server hosted on your end to complete your daily needs with efficient network routing and configuration. For more information please contact',
     icon: RefreshIcon,
   },
   {
@@ -30,17 +30,16 @@ const features = [
     icon: CogIcon,
   },
   {
-    name: 'CCTV System Solutions',
-    description: 'Dot Internet provides high end CCTV and IP surveillance solutions.',
+    name: 'Data Connectivity',
+    description: 'Sohag Technology offers various solutions for Data connectivity. Keeping our system updated with the latest technologies, we ensure the most efficient data connectivity solutions for our clients.',
     icon: ShieldCheckIcon,
   },
   {
     name: 'Fast FTP Server Support',
-    description: '120 Mbps download speed for FTP servers to ensure user satisfaction.',
+    description: '120 Mbps download speed for FTP servers to ensure user satisfaction 24/7.',
     icon: ServerIcon,
   },
 ]
-
 
 
 export default function Feature() {
