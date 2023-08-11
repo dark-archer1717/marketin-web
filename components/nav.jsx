@@ -1,67 +1,10 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import {
-  ChartBarIcon,
-  CursorClickIcon,
-  DocumentReportIcon,
-  MenuIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  ViewGridIcon,
-  XIcon,
-} from '@heroicons/react/outline'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-
-
-const solutions = [
-  {
-    name: 'Analytics',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
-    icon: ChartBarIcon,
-  },
-  {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
-    icon: CursorClickIcon,
-  },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
-  {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: ViewGridIcon,
-  },
-  {
-    name: 'Automations',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
-    icon: RefreshIcon,
-  },
-  {
-    name: 'Reports',
-    description: 'Get detailed reports that will help you make more informed decisions ',
-    href: '#',
-    icon: DocumentReportIcon,
-  },
-]
-const resources = [
-  {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
-  },
-  { name: 'Guides', description: 'Learn how to maximize our platform to get the most out of it.', href: '#' },
-  { name: 'Events', description: 'See what meet-ups and other events we might be planning near you.', href: '#' },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#' },
-]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+import clsx from 'clsx'
 
 export default function Nav() {
 
@@ -84,7 +27,7 @@ export default function Nav() {
 
           <div className="mr-2 -my-2 md:invisible">
             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-              {/* <span className="sr-only"></span> */}
+              {<span className="sr-only"></span>}
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
@@ -94,7 +37,7 @@ export default function Nav() {
               {({ open }) => (
                 <>
                   <Popover.Button
-                    className={classNames(
+                    className={clsx(
                       open ? 'text-gray-900' : 'text-gray-500'
                     )}
                   >
@@ -181,6 +124,9 @@ export default function Nav() {
                   <Image
                     className="h-8 w-auto"
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                    layout='fill'
+                    width={200}
+                    height={200}
                     alt="Workflow"
                   />
                 </div>
@@ -193,18 +139,18 @@ export default function Nav() {
               </div>
               <div className="mt-6">
                 <nav className="grid grid-cols-1 gap-7">
-                  {solutions.map((solution) => (
+                  {/*  {map(() => (
                     <a
-                      key={solution.name}
-                      href={solution.href}
+                      key={''}
+                      href={''}
                       className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                     >
                       <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
-                        <solution.icon className="h-6 w-6" aria-hidden="true" />
+                        <icon className="h-6 w-6" aria-hidden="true" />
                       </div>
-                      <div className="ml-4 text-base font-medium text-gray-900">{solution.name}</div>
+                      <div className="ml-4 text-base font-medium text-gray-900">{.name}</div>
                     </a>
-                  ))}
+                  ))} */}
                 </nav>
               </div>
             </div>
@@ -213,16 +159,6 @@ export default function Nav() {
                 <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
                   Pricing
                 </a>
-
-                {resources.map((resource) => (
-                  <a
-                    key={resources.name}
-                    href={resource.href}
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    {resource.name}
-                  </a>
-                ))}
               </div>
               <div className="mt-6">
                 <a

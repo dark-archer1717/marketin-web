@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default function Info() {
   return (
@@ -45,8 +44,9 @@ export default function Info() {
             <div className="relative flex flex-col min-w-0 break-words w-full">
               {
                 <div className="flex-auto p-5 lg:p-10">
-                  <Image src="/public/image/contact.png" width={200} height={200} layout="fill" alt="image"
-                    objectFit='contain' />
+                  {<Image src="/../image/kaleb-tapp-J59wWPn09BE-unsplash.jpg" width={2000} height={2300} layout="fill" alt="image"
+                    objectFit='cover' />}
+
                 </div>
               }
             </div>
