@@ -33,7 +33,7 @@ export default function section() {
                   Why Choose Us
                 </span>
                 <h2 className="text-dark mb-8 text-3xl font-bold sm:text-4xl">
-                  Make your customers happy by giving services.
+                  We work to make Quality Internet and Solutions affordable for all user ranges.
                 </h2>
                 <p className="text-body-color mb-8 text-base">
                   It is a long established fact that a reader will be distracted by
