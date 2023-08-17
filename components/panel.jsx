@@ -1,40 +1,55 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import { Container } from './Container'
 
 
 export default function Panel() {
   return (
-    <div className="bg-white">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <div className="bg-indigo-700 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
-          <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
-            <div className="lg:self-center">
-              <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-                <span className="block">Ready to dive in?</span>
-                <span className="block">Tap the following button.</span>
-              </h2>
-              <p className="mt-4 text-lg leading-6 text-indigo-200">
-                Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla
-                nec.
+    <Container>
+      <div className="relative bg-white">
+        <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+          <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
+            <div className="mx-auto max-w-2xl lg:mx-0">
+              <img
+                className="h-11"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                alt="Your Company"
+              />
+              <div className="hidden sm:mt-32 sm:flex lg:mt-16">
+                <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                  Anim aute id magna aliqua ad ad non deserunt sunt.{' '}
+                  <a href="#" className="whitespace-nowrap font-semibold text-indigo-600">
+                    <span className="absolute inset-0" aria-hidden="true" />
+                    Read more <span aria-hidden="true">&rarr;</span>
+                  </a>
+                </div>
+              </div>
+              <h1 className="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
+                Connecting You to Limitless Possibilities: Your Fast Lane to the Digital World!
+              </h1>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Join us in bridging distances, empowering businesses, and uniting loved ones across the globe. Experience the internet like never before and be a part of a world thats always connected. Your journey starts here, where the possibilities are limitless, and the world is at your fingertips.
               </p>
-              <Link href="/contact">
+              <div className="mt-10 flex items-center gap-x-6">
                 <a
-                  className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-indigo-600 hover:bg-indigo-50"
+                  href="contact"
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Call to Contact
+                  Get started
                 </a>
-              </Link>
+                <a href="pricing" className="text-sm font-semibold leading-6 text-gray-900">
+                  Learn more <span aria-hidden="true">→</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-            {/* <Image
-              className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-              src=" "
-              alt=" "
-            /> */}
+          <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
+            <img
+              className="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
+              src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2102&q=80"
+              alt=""
+            />
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   )
 }

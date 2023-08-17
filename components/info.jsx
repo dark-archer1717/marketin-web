@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Info() {
   return (
-    <div className="py-4 bg-black text-white" path="/contact">
+    <div className="py-4 bg-white text-black" path="/contact">
       <div className="container mx-auto flex flex-col md:flex-row my-12 md:my-36">
         <div className="flex flex-col w-full lg:w-2/5 p-8">
           <p className="text-3xl md:text-5xl text-yellow-500 my-4 leading-relaxed md:leading-snug">Contact our team</p>
@@ -44,7 +44,7 @@ export default function Info() {
             <div className="relative flex flex-col min-w-0 break-words w-full">
               {
                 <div className="flex-auto p-5 lg:p-10">
-                  {<Image src="/../image/kaleb-tapp-J59wWPn09BE-unsplash.jpg" width={2000} height={2300} layout="fill" alt="image"
+                  {<Image src="/../image/kaleb-tapp-J59wWPn09BE-unsplash.jpg" width={2000} height={2600} layout="fill" alt=" "
                     objectFit='cover' />}
 
                 </div>
@@ -54,5 +54,6 @@ export default function Info() {
         </div>
       </div>
     </div>
+
   )
 }
