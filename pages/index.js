@@ -7,20 +7,20 @@ import Panel from '../components/panel'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Sohag Technology - High Speed Internet</title>
         <meta name="description" content="Leading ISP in Bangladesh" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <>
-        <Nav />
-        <Panel />
-        <Feature />
-        <Comprice />
-      </>
+
+      <Nav />
+      <Panel />
+      <Feature />
+      <Comprice />
+
       <Footer />
-    </div>
+    </>
   )
 }
