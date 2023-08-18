@@ -1,8 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
+import { Container } from '../components/Container'
 
 export default function Info() {
   return (
+
     <div className="py-4 bg-white text-black" path="/contact">
       <div className="container mx-auto flex flex-col md:flex-row my-12 md:my-36">
         <div className="flex flex-col w-full lg:w-2/5 p-8">
@@ -44,7 +46,7 @@ export default function Info() {
             <div className="relative flex flex-col min-w-0 break-words w-full">
               {
                 <div className="flex-auto p-5 lg:p-10">
-                  {<Image src="/../image/kaleb-tapp-J59wWPn09BE-unsplash.jpg" width={2000} height={2600} layout="fill" alt=" "
+                  {<Image src="/public/image/contact.png" /* width={2000} height={2600}  */ layout="fill" alt=" "
                     objectFit='cover' />}
 
                 </div>

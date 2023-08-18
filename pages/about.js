@@ -3,7 +3,7 @@ import Bout from '../components/bout'
 import Nav from '../components/nav'
 import Footer from '../components/footer';
 import Section from '../components/section';
-import Testimonials from '../components/testimonials';
+import Testimonials from '../components/Testimonials';
 const About = () => {
 
   return (
