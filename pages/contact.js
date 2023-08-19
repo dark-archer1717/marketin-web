@@ -8,8 +8,8 @@ const Contact = () => {
 
   return (
     <>
+      <Nav />
       <Container>
-        <Nav />
         <Info />
         <Cartoon />
       </Container>

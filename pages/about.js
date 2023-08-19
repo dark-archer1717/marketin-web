@@ -4,14 +4,18 @@ import Nav from '../components/nav'
 import Footer from '../components/footer';
 import Section from '../components/section';
 import Testimonials from '../components/Testimonials';
+import { Container } from '../components/Container';
+
 const About = () => {
 
   return (
     <>
       <Nav />
-      <Section />
-      <Testimonials />
-      <Bout />
+      <Container >
+        <Section />
+        <Testimonials />
+        <Bout />
+      </Container>
       <Footer />
     </>
   );

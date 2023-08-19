@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import About from '../public/image/about.jpg'
+import About from '/public/image/about.jpg'
 
-export default function section() {
+export default function Section() {
   return (
     <div>
       <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
