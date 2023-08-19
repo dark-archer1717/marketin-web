@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-
 import { AuthLayout } from '../components/AuthLayout'
 import { Button } from '../components/Button'
 import { SelectField, TextField } from '../components/Fields'
@@ -77,9 +76,9 @@ export default function Register() {
             id="referral_source"
             name="referral_source"
           >
-            <option>AltaVista search</option>
+            <option>Local Ads</option>
             <option>Super Bowl commercial</option>
-            <option>Our route 34 city bus ad</option>
+            <option>Posters</option>
             <option>The “Never Use This” podcast</option>
           </SelectField>
           <div className="col-span-full">
