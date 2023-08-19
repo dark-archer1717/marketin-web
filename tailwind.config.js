@@ -22,9 +22,9 @@ module.exports = {
     //   // => @media (min-width: 1536px) { ... }
     // },
     extend: {
-      /*  fontFamily: {
-         'montserrat': ['Montserrat'],
-       }, */
+      fontFamily: {
+        'montserrat': ['Roboto'],
+      },
     },
   },
   plugins: [],
