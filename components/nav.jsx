@@ -5,9 +5,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import clsx from 'clsx'
-import { NavLink } from '../components/NavLink'
 import { Container } from '../components/Container'
-import { Button } from '../components/Button'
+
 
 
 
@@ -231,7 +230,7 @@ export default function Nav() {
                   </a>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
-                  <a href="#feature" className="text-base font-medium text-gray-500 hover:text-black-800" id={router.pathname == "/feature" ? "activeLink" : ""}>
+                  <a href="#feature" className="text-base font-medium text-gray-500 hover:text-gray-800" id={router.pathname == "/feature" ? "activeLink" : ""}>
                     Features
                   </a>
                 </div>

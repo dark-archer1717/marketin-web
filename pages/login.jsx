@@ -1,14 +1,17 @@
 import Head from 'next/head'
+import React from 'react'
 import Link from 'next/link'
-
 import { AuthLayout } from '../components/AuthLayout'
 import { Button } from '../components/Button'
 import { TextField } from '../components/Fields'
 import { Logo } from '../components/Logo'
+import Nav from '../components/nav'
+import Footer from "../components/footer";
 
-export default function Login() {
+const Login = () => {
   return (
     <>
+      <Nav />
       <Head>
         <title>Sign In </title>
       </Head>
@@ -64,6 +67,9 @@ export default function Login() {
           </div>
         </form>
       </AuthLayout>
+      <Footer />
     </>
   )
 }
+
+export default Login;

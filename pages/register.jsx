@@ -3,11 +3,14 @@ import Link from 'next/link'
 import { AuthLayout } from '../components/AuthLayout'
 import { Button } from '../components/Button'
 import { SelectField, TextField } from '../components/Fields'
-import { Logo } from '../components/Logo'
+import { Logo } from '../components/Logo';
+import Nav from "../components/nav";
+import Footer from "../components/footer";
 
 export default function Register() {
   return (
     <>
+      <Nav />
       <Head>
         <title>Sign Up </title>
       </Head>
@@ -95,6 +98,7 @@ export default function Register() {
           </div>
         </form>
       </AuthLayout>
+      <Footer />
     </>
   )
 }

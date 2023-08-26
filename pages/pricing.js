@@ -3,8 +3,6 @@ import Nav from "../components/nav";
 import Footer from "../components/footer";
 import Extendedprice from '../components/pricing/extendedprice';
 
-
-
 const Pricing = () => {
   return (
     <>
