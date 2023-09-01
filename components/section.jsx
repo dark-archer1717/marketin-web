@@ -16,8 +16,8 @@ export default function Section() {
                   <div className="py-3">
                     <Image
                       src={About}
-                      width={600}
-                      height={700}
+                      width={1000}
+                      height={1300}
                       layout="responsive"
                       alt="about.jpg"
                       className="w-full rounded-2xl"

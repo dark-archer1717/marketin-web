@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { Container } from '../components/Container'
+
 
 export default function Info() {
   return (
@@ -44,13 +44,15 @@ export default function Info() {
         <div className=" flex flex-col lg:w-3/5 justify-center w-full lg:-mt-12">
           <div className="container">
             <div className="relative flex flex-col min-w-0 break-words w-full">
-              {
-                <div className="flex-auto p-5 lg:p-10">
-                  {<Image src="/public/image/contact.png" /* width={2000} height={2600}  */ layout="fill" alt=" "
-                    objectFit='cover' />}
-
-                </div>
-              }
+              <div className="flex-auto p-5 lg:p-10">
+                <Image
+                  src="/image/contact.png"
+                  width={1200}
+                  height={800}
+                  layout="responsive"
+                  alt="Contact"
+                />
+              </div>
             </div>
           </div>
         </div>
