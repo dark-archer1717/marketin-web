@@ -156,7 +156,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy;  ST Internet 2022. All rights reserved.
+            &copy;  ST Internet 2023. All rights reserved.
           </p>
         </div>
       </div>
