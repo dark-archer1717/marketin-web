@@ -1,62 +1,174 @@
-import React from 'react';
-import Image from 'next/image';
+import { useState } from 'react'
 
-export default function Cartoon() {
+import { Switch } from '@headlessui/react'
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+export default function Example() {
+  const [agreed, setAgreed] = useState(false)
+
   return (
-    <div className="grid grid-cols-1 gap-8 px-4 py-8 mx-auto md:grid-cols-2 md:px-8 lg:px-16 xl:px-24 2xl:px-32 dark:bg-gray-800 dark:text-gray-100">
-      <div className="flex flex-col justify-between space-y-4">
-        <h2 className="text-3xl font-semibold lg:text-4xl">Lets Talk!</h2>
-        <p className="text-gray-400">
-          Have something on your mind? Reach out to us.
-        </p>
-      </div>
-      <div className="relative w-full h-52 md:h-64">
-        <Image
-          src="/assets/svg/doodle.svg"
-          alt="Image"
-          layout="fill"
-          objectFit="contain"
-          className="p-6"
+    <div className="isolate bg-gradient-to-br from-blue-50 to-indigo-100 px-6 py-24 sm:py-32 lg:px-8">
+      <div
+        className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+        aria-hidden="true"
+      >
+        <div
+          className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+          style={{
+            clipPath:
+              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+          }}
         />
       </div>
-      <form className="space-y-6">
-        <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-            Full Name
-          </label>
-          <input
-            id="name"
-            type="text"
-            className="w-full p-3 rounded bg-gray-100 dark:bg-black-800"
-          />
+      <div className="mx-auto max-w-2xl text-center">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Sales</h2>
+        <p className="mt-2 text-lg leading-8 text-gray-600">
+          Have something on your mind? Let’s discuss it.
+        </p>
+      </div>
+      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div>
+            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+              First name
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                autoComplete="given-name"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div>
+            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+              Last name
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                autoComplete="family-name"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
+              Company
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="text"
+                name="company"
+                id="company"
+                autoComplete="organization"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+              Email
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autoComplete="email"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+              Phone number
+            </label>
+            <div className="relative mt-2.5">
+              <div className="absolute inset-y-0 left-0 flex items-center">
+                <label htmlFor="country-code" className="sr-only">
+                  Country Code
+                </label>
+                <select
+                  id="country-code"
+                  name="country-code"
+                  className="h-full rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-4 text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                  defaultValue="+880"
+                >
+                  <option value="+880">BD +880</option>
+                  {/* Add other countries as needed */}
+                </select>
+              </div>
+              <input
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                autoComplete="tel"
+                className="block w-full rounded-md rounded-l-none border border-gray-300 px-3.5 py-2 text-gray-900 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                placeholder="123-456-7890"
+              />
+            </div>
+          </div>
+
+          <div className="sm:col-span-2">
+            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+              Message
+            </label>
+            <div className="mt-2.5">
+              <textarea
+                name="message"
+                id="message"
+                rows={4}
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                defaultValue={''}
+              />
+            </div>
+          </div>
+          <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
+            <div className="flex h-6 items-center">
+              <Switch
+                checked={agreed}
+                onChange={setAgreed}
+                className={classNames(
+                  agreed ? 'bg-indigo-600' : 'bg-gray-200',
+                  'flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                )}
+              >
+                <span className="sr-only">Agree to policies</span>
+                <span
+                  aria-hidden="true"
+                  className={classNames(
+                    agreed ? 'translate-x-3.5' : 'translate-x-0',
+                    'h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out'
+                  )}
+                />
+              </Switch>
+            </div>
+            <Switch.Label className="text-sm leading-6 text-gray-600">
+              By selecting this, you agree to our{' '}
+              <a href="#" className="font-semibold text-indigo-600">
+                privacy&nbsp;policy
+              </a>
+              .
+            </Switch.Label>
+          </Switch.Group>
         </div>
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-            Email
-          </label>
-          <input
-            id="email"
-            type="email"
-            className="w-full p-3 rounded bg-gray-100 dark:bg-black-800"
-          />
+        <div className="mt-10">
+          <button
+            type="submit"
+            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-md transition duration-150 ease-in-out hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            Lets talk
+          </button>
         </div>
-        <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-            Message
-          </label>
-          <textarea
-            id="message"
-            rows="3"
-            className="w-full p-3 rounded bg-gray-100 dark:bg-black-800"
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className="w-full p-3 text-sm font-semibold text-white uppercase rounded bg-violet-400 dark:bg-violet-500"
-        >
-          Send Message
-        </button>
       </form>
     </div>
-  );
+  )
 }

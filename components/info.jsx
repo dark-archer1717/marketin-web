@@ -6,9 +6,9 @@ export default function Info() {
   return (
 
     <div className="py-4 bg-white text-black" path="/contact">
-      <div className="container mx-auto flex flex-col md:flex-row my-12 md:my-36">
+      <div className="container mx-auto flex flex-col md:flex-row my-12 md:my-30">
         <div className="flex flex-col w-full lg:w-2/5 p-8">
-          <p className="text-3xl md:text-5xl text-yellow-500 my-4 leading-relaxed md:leading-snug">Contact our team</p>
+          <p className="text-3xl md:text-5xl text-grey-500 my-4 leading-relaxed md:leading-snug">Contact Our Team</p>
           <p className="font-sans text-sm md:text-lg my-2 md:my-4"><svg className="inline-block fill-current mr-2"
             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path
