@@ -155,9 +155,15 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy;  ST Internet 2023. All rights reserved.
-          </p>
+          <div className="mt-6 text-md text-center text-gray-900 dark:text-gray-300">
+            © ST Internet {new Date().getFullYear()}. All rights reserved. Developed by{" "}
+            <b> <a
+              href="https://www.efazulkarim.live/"
+              target="_blank"
+              rel="noopener noreferrer">
+              Kazi Efazul Karim.
+            </a>{" "}</b>
+          </div>
         </div>
       </div>
     </footer>
