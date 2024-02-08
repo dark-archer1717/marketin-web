@@ -12,7 +12,7 @@ export default function Home() {
         <title>Sohag Technology - High Speed Internet</title>
         <meta name="description" content="Leading ISP in Bangladesh" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/logo.webp" />
+        <link rel="icon" href="/logo2.webp" />
       </Head>
 
       <Nav />
