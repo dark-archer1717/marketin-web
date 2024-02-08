@@ -4,6 +4,8 @@ import Feature from '../components/feature'
 import Comprice from '../components/pricing/comprce'
 import Footer from '../components/footer'
 import Panel from '../components/panel'
+import { Analytics } from '@vercel/analytics/react';
+
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
       <Comprice />
 
       <Footer />
+      <Analytics />
     </>
   )
 }
