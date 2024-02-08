@@ -102,13 +102,21 @@ export default function Nav() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center px-4 py-2 sm:px-6 md:justify-start md:space-x-6">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <span>
-                <Link href="/">
-                  <a className="text-xl" id={router.pathname == "/" ? "activeLink" : ""}>
-                    Sohag Technology
-                  </a>
-                </Link>
-              </span>
+
+              <Link href="/">
+                <a className={`text-xl ${router.pathname == "/" ? "activeLink" : ""}`}>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <Image
+                      src="/logo2.webp"
+                      alt="Logo"
+                      width="42"
+                      height="42"
+                    />
+                    <span style={{ marginLeft: '8px' }}>Sohag Technology</span>
+                  </div>
+                </a>
+              </Link>
+
             </div>
 
             <div className="mr-2 -my-2 md:invisible">

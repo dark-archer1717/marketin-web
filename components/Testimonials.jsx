@@ -11,19 +11,19 @@ const testimonials = [
   [
     {
       content:
-        'TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
+        'Sohag Technology is providing the best internet service in the country. I am very happy with their service. I would recommend it to everyone.',
       author: {
-        name: 'Sheryl Berge',
-        role: 'CEO at Lynch LLC',
+        name: 'Annonymous User',
+
         image: avatarImage1,
       },
     },
     {
       content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
+        'I have been using Sohag Technology for a long time now and I am very happy with their service. I would recommend it to everyone. I am very happy with their service. I would recommend it to everyone.',
       author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
+        name: 'Annonymous User',
+
         image: avatarImage4,
       },
     },
@@ -31,19 +31,19 @@ const testimonials = [
   [
     {
       content:
-        'The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
+        'The best part about Sohag Technology is that they are always there for you. I have never faced any problem with their service. I am very happy with their service. I would recommend it to everyone.',
       author: {
-        name: 'Leland Kiehn',
-        role: 'Founder of Kiehn and Sons',
+        name: 'Annonymous User',
+
         image: avatarImage5,
       },
     },
     {
       content:
-        'There are so many things I had to do with my old software that I just don’t do at all with TaxPal. Suspicious but I can’t say I don’t love it.',
+        'There are so many things I had to do with my old internet service provider that I don’t have to do with Sohag Technology. It’s like a breath of fresh air. I can finally focus on my business.',
       author: {
-        name: 'Erin Powlowski',
-        role: 'COO at Armstrong Inc',
+        name: 'Annonymous User',
+
         image: avatarImage2,
       },
     },
@@ -51,22 +51,21 @@ const testimonials = [
   [
     {
       content:
-        'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
+        'It’s so easy to use, and it’s so fast. I can’t believe I didn’t switch to Sohag Technology sooner. I would recommend it to everyone. I am very happy with their service. I would recommend it to everyone.',
       author: {
-        name: 'Peter Renolds',
-        role: 'Founder of West Inc',
+        name: 'Annonymous User',
+
         image: avatarImage3,
       },
     },
     {
       content:
-        'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
+        'This is the best internet service I have ever used. Fast and reliable internet service. I am very happy with their service. I would recommend it to everyone.',
       author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
+        name: 'Annonymous User',
         image: avatarImage4,
       },
-    },
+    }
   ],
 ]
 
@@ -88,10 +87,10 @@ export default function Testimonials() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Loved by businesses worldwide.
+            Loved by people citywide.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Our software is so simple that people can’t help but fall in love
+            Our service is so simple that people can’t help but fall in love
             with it. Simplicity is easy when you just skip tons of
             mission-critical features.
           </p>
