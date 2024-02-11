@@ -231,7 +231,7 @@ export default function Nav() {
 
               <div className="py-8 px-7">
                 <div className="grid grid-cols-2 gap-4">
-                  <a href="pricing" className="text-base font-medium text-gray-800 hover:text-gray-800" >
+                  <a href="pricing" className="text-base font-medium text-gray-600 hover:text-gray-800" >
                     Pricing
                   </a>
                 </div>
