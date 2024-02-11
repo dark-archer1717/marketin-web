@@ -79,10 +79,10 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl  ring-slate-900/5"
           >
-            <MobileNavLink href="#feature">Feature</MobileNavLink>
-            <MobileNavLink href="#about">About</MobileNavLink>
-            <MobileNavLink href="#contact">Contact</MobileNavLink>
-            <MobileNavLink href="/pricing">Pricing</MobileNavLink>
+            <MobileNavLink href="feature">Feature</MobileNavLink>
+            <MobileNavLink href="about">About</MobileNavLink>
+            <MobileNavLink href="contact">Contact</MobileNavLink>
+            <MobileNavLink href="pricing">Pricing</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
             <MobileNavLink href="/login">Sign in</MobileNavLink>
           </Popover.Panel>
@@ -161,7 +161,7 @@ export default function Nav() {
                                 </span>
                               </div>
                               <p className="mt-1 text-sm text-gray-500">
-                                Empower your entire team with even more advanced tools.
+                                Empower your entire team with even more faster internet.
                               </p>
                             </a>
                           </div>
@@ -172,7 +172,7 @@ export default function Nav() {
                 )}
               </Popover>
 
-              <Link href="/pricing">
+              <Link href="pricing">
                 <a className="text-base font-medium text-gray-500 hover:text-gray-900" id={router.pathname == "/pricing" ? "activeLink" : ""}>
                   Pricing
                 </a>
@@ -231,12 +231,12 @@ export default function Nav() {
 
               <div className="py-8 px-7">
                 <div className="grid grid-cols-2 gap-4">
-                  <a href="#pricing" className="text-base font-medium text-gray-800 hover:text-gray-800" >
+                  <a href="pricing" className="text-base font-medium text-gray-800 hover:text-gray-800" >
                     Pricing
                   </a>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
-                  <a href="#feature" className="text-base font-medium text-gray-500 hover:text-gray-800" id={router.pathname == "/feature" ? "activeLink" : ""}>
+                  <a href="feature" className="text-base font-medium text-gray-500 hover:text-gray-800" id={router.pathname == "/feature" ? "activeLink" : ""}>
                     Features
                   </a>
                 </div>
@@ -273,40 +273,4 @@ export default function Nav() {
   )
 }
 
-/* export function Nav() {
-  return (
-    <header className="py-10">
-      <Container>
-        <nav className="relative z-50 flex justify-between">
-          <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home">
-              <b>Sohag Technology
-              </b>
-            </Link>
-            <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="/feature">Feature</NavLink>
-              <NavLink href="/about">About</NavLink>
-              <NavLink href="/contact">Contact</NavLink>
-              <NavLink href="/pricing">pricing</NavLink>
-            </div>
-          </div>
-          <div className="flex items-center gap-x-5 md:gap-x-8">
-            <div className="hidden md:block">
-              <NavLink href="/login">Sign in</NavLink>
-            </div>
-            <Button href="/register" color="blue">
-              <span>
-                Get started <span className="hidden lg:inline">today</span>
-              </span>
-            </Button>
-            <div className="-mr-1 md:hidden">
-              <MobileNavigation />
-            </div>
-          </div>
-        </nav>
-      </Container>
-    </header>
-  )
-}
- */
 
