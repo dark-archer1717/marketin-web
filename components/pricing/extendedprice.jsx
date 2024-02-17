@@ -5,14 +5,14 @@ const tiers = [
     name: 'Basic',
     href: '/contact',
     packageSize: 10,
-    priceMonthly: ' 600',
+    priceMonthly: ' 500',
     description: 'Choose a package and start your internet journey',
     includedFeatures: ['Unlimited BDIX Bandwidth', '4K Youtube and Facebook Stream.', '24/7 Phone and Online Support.'],
   },
   {
     name: 'Balanced',
     href: '/contact',
-    packageSize: 15,
+    packageSize: 16,
     priceMonthly: 800,
     description: 'Choose a package and start your internet journey',
     includedFeatures: [
@@ -64,21 +64,8 @@ const tiers = [
   {
     name: 'Ultimate User',
     href: '/contact',
-    packageSize: 35,
-    priceMonthly: 2000,
-    description: 'Choose a package and start your internet journey',
-    includedFeatures: [
-      'Unlimited BDIX Bandwidth.',
-      '4K Youtube and Facebook Stream.',
-      'IPv6 Public IP Only',
-      '24 / 7 Phone and Online Support',
-    ],
-  },
-  {
-    name: 'Premium User',
-    href: '/contact',
     packageSize: 40,
-    priceMonthly: 2500,
+    priceMonthly: 1800,
     description: 'Choose a package and start your internet journey',
     includedFeatures: [
       'Unlimited BDIX Bandwidth.',
@@ -90,8 +77,8 @@ const tiers = [
   {
     name: 'Gigachad User',
     href: '/contact',
-    packageSize: 40,
-    priceMonthly: 3000,
+    packageSize: 64,
+    priceMonthly: 2500,
     description: 'Choose a package and start your internet journey',
     includedFeatures: [
       'Unlimited BDIX Bandwidth.',
@@ -100,6 +87,7 @@ const tiers = [
       '24 / 7 Phone and Online Support',
     ],
   },
+
 ]
 
 export default function Extendedprice() {

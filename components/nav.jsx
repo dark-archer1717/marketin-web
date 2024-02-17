@@ -190,10 +190,10 @@ export default function Nav() {
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
 
               <a
-                href="register"
+                href="http://link.bdcinema.net/"
                 className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
               >
-                Get Started
+                FTP Server
               </a>
             </div>
           </div>
@@ -252,17 +252,12 @@ export default function Nav() {
                 </div>
                 <div className="mt-6">
                   <a
-                    href="register"
+                    href="http://link.bdcinema.net/"
                     className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                   >
-                    Sign up
+                    FTP Server
                   </a>
-                  <p className="mt-6 text-center text-base font-medium text-gray-500">
-                    Existing customer?{' '}
-                    <a href="login" className="text-indigo-600 hover:text-indigo-500">
-                      Sign in
-                    </a>
-                  </p>
+
                 </div>
               </div>
             </div>

@@ -5,14 +5,14 @@ const tiers = [
     name: 'Basic',
     href: '/contact',
     packageSize: 10,
-    priceMonthly: ' 600',
+    priceMonthly: ' 500',
     description: 'Choose a package and start your internet journey',
     includedFeatures: ['Unlimited BDIX Bandwidth', '4K Youtube and Facebook Stream.', '24/7 Phone and Online Support.'],
   },
   {
     name: 'Balanced',
     href: '/contact',
-    packageSize: 15,
+    packageSize: 16,
     priceMonthly: 800,
     description: 'Choose a package and start your internet journey',
     includedFeatures: [
